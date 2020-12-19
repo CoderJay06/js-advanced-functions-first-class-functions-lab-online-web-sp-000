@@ -54,3 +54,17 @@ const fareDoubler = function(fare) {
 const fareTripler = function(fare) {
     return (createFareMultiplier()(fare / 2) - fare + fare)
 }
+
+// +`selectDifferentDrivers()`—
+// This
+// function takes two arguments, an array of `drivers`
+// and either the `returnFirstTwoDrivers()`
+// or `returnLastTwoDrivers()`
+// function.Based on these two arguments, `selectDifferentDrivers()`
+// will
+// return either the first two drivers or the last two drivers.
+
+const selectDifferentDrivers = function(drivers, driverFunc) {
+    let driverFuncResult = driverFunc(drivers)
+    return driverFuncResult
+}
